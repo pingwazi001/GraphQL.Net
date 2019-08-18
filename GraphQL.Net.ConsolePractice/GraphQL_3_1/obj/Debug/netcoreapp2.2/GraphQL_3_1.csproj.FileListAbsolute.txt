@@ -1,0 +1,11 @@
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\bin\Debug\netcoreapp2.2\GraphQL_3_1.deps.json
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\bin\Debug\netcoreapp2.2\GraphQL_3_1.runtimeconfig.json
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\bin\Debug\netcoreapp2.2\GraphQL_3_1.runtimeconfig.dev.json
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\bin\Debug\netcoreapp2.2\GraphQL_3_1.dll
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\obj\Debug\netcoreapp2.2\GraphQL_3_1.csproj.CoreCompileInputs.cache
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\obj\Debug\netcoreapp2.2\GraphQL_3_1.AssemblyInfoInputs.cache
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\obj\Debug\netcoreapp2.2\GraphQL_3_1.AssemblyInfo.cs
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\bin\Debug\netcoreapp2.2\GraphQL_3_1.pdb
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\obj\Debug\netcoreapp2.2\GraphQL_3_1.csprojAssemblyReference.cache
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\obj\Debug\netcoreapp2.2\GraphQL_3_1.dll
+C:\gitproject\GraphQL.Net\GraphQL.Net.ConsolePractice\GraphQL_3_1\obj\Debug\netcoreapp2.2\GraphQL_3_1.pdb
