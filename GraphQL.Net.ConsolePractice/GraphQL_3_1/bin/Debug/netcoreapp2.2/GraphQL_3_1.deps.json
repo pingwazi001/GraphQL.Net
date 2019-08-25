@@ -1,24 +1,39 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "749de7520e7110cbdfb6da43ebff64692f1ccf89"
+    "signature": "5ad925ce2554bc54f1d84d9e94a4dfd12168e4f9"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "GraphQL_3_1/1.0.0": {
         "dependencies": {
-          "GraphQL": "3.0.0"
+          "GraphQL": "2.4.0"
         },
         "runtime": {
           "GraphQL_3_1.dll": {}
         }
       },
-      "GraphQL-Parser/4.1.0": {
+      "GraphQL/2.4.0": {
+        "dependencies": {
+          "GraphQL-Parser": "3.0.0",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Buffers": "4.5.0",
+          "System.Reactive.Core": "3.1.1",
+          "System.Reactive.Linq": "3.1.1"
+        },
         "runtime": {
-          "lib/netstandard2.0/GraphQL-Parser.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "4.1.0.0"
+          "lib/netstandard2.0/GraphQL.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
+      "GraphQL-Parser/3.0.0": {
+        "runtime": {
+          "lib/netstandard1.1/GraphQL-Parser.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -89,7 +104,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ComponentModel.Annotations/4.5.0": {},
       "System.ComponentModel.Primitives/4.3.0": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
@@ -114,6 +128,11 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0"
+        }
+      },
+      "System.Diagnostics.Contracts/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -224,36 +243,39 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Reactive/4.0.0": {
+      "System.Reactive.Core/3.1.1": {
         "dependencies": {
-          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0"
+          "System.ComponentModel": "4.3.0",
+          "System.Diagnostics.Contracts": "4.0.1",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Reactive.Interfaces": "3.1.1",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reactive.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.398"
+          "lib/netcoreapp1.0/System.Reactive.Core.dll": {
+            "assemblyVersion": "3.0.6000.0",
+            "fileVersion": "3.1.1.0"
           }
         }
       },
-      "System.Reactive.Core/4.0.0": {
-        "dependencies": {
-          "System.Reactive": "4.0.0"
-        },
+      "System.Reactive.Interfaces/3.1.1": {
         "runtime": {
-          "lib/netstandard2.0/System.Reactive.Core.dll": {
-            "assemblyVersion": "3.0.6000.0",
-            "fileVersion": "3.0.6000.0"
+          "lib/netstandard1.0/System.Reactive.Interfaces.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.1.0"
           }
         }
       },
-      "System.Reactive.Linq/4.0.0": {
+      "System.Reactive.Linq/3.1.1": {
         "dependencies": {
-          "System.Reactive": "4.0.0"
+          "System.Reactive.Core": "3.1.1",
+          "System.Runtime.InteropServices.WindowsRuntime": "4.0.1"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Reactive.Linq.dll": {
-            "assemblyVersion": "3.0.6000.0",
-            "fileVersion": "3.0.6000.0"
+          "lib/netstandard1.3/System.Reactive.Linq.dll": {
+            "assemblyVersion": "3.0.3000.0",
+            "fileVersion": "3.1.1.0"
           }
         }
       },
@@ -331,7 +353,7 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
-      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+      "System.Runtime.InteropServices.WindowsRuntime/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.3.0"
         }
@@ -385,6 +407,17 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Threading.Thread/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Threading.ThreadPool/4.0.10": {
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0"
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -417,19 +450,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
-      },
-      "GraphQL/3.0.0": {
-        "dependencies": {
-          "GraphQL-Parser": "4.1.0",
-          "Newtonsoft.Json": "10.0.3",
-          "System.Buffers": "4.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
-          "System.Reactive.Core": "4.0.0",
-          "System.Reactive.Linq": "4.0.0"
-        },
-        "runtime": {
-          "GraphQL.dll": {}
-        }
       }
     }
   },
@@ -439,12 +459,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "GraphQL-Parser/4.1.0": {
+    "GraphQL/2.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RX0d3vB+w8bHBS+wl4qA0dQWBL2kbnlTbYtsP+409Gn35EVi3v2HQ0aU1SerkrwLshPXcJycrxqQsQmztqxyAw==",
-      "path": "graphql-parser/4.1.0",
-      "hashPath": "graphql-parser.4.1.0.nupkg.sha512"
+      "sha512": "sha512-TMCyq9hB4rEyjZrI61BCtFIRUYfV+c3WrydeWefg4mOn4kVNRPDHTb2KtZrWbIlDriY6u5Dze0FkpXs4RlYVzQ==",
+      "path": "graphql/2.4.0",
+      "hashPath": "graphql.2.4.0.nupkg.sha512"
+    },
+    "GraphQL-Parser/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6vPhia+kfo44leH7GNAo4g/BRVxvprtu+96N4T218dTM/0KYhRCA8diqZFIib777TgKZpQfaaL014McoCuHTJA==",
+      "path": "graphql-parser/3.0.0",
+      "hashPath": "graphql-parser.3.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -495,13 +522,6 @@
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
-    },
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -515,6 +535,13 @@
       "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.Contracts/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HvQQjy712vnlpPxaloZYkuE78Gn353L0SJLJVeLcNASeg9c4qla2a1Xq8I7B3jZoDzKPtHTkyVO7AZ5tpeQGuA==",
+      "path": "system.diagnostics.contracts/4.0.1",
+      "hashPath": "system.diagnostics.contracts.4.0.1.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
@@ -586,26 +613,26 @@
       "path": "system.objectmodel/4.3.0",
       "hashPath": "system.objectmodel.4.3.0.nupkg.sha512"
     },
-    "System.Reactive/4.0.0": {
+    "System.Reactive.Core/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yaVAxT2Yl28p9+DupGwj2oPbIOYZUQimOQ+n7N7vML2oofIRj9BmcfD7DHc6FLrNah65EigOgG6U9VnwWEyz5g==",
-      "path": "system.reactive/4.0.0",
-      "hashPath": "system.reactive.4.0.0.nupkg.sha512"
+      "sha512": "sha512-CKWC+UP1aM75taNX+sTBn2P97uHIUjKxq+z45iy7P91QGFqNFleR2tsqIC76HMVvYl7o8oWyMiycdsc9rC1Z/g==",
+      "path": "system.reactive.core/3.1.1",
+      "hashPath": "system.reactive.core.3.1.1.nupkg.sha512"
     },
-    "System.Reactive.Core/4.0.0": {
+    "System.Reactive.Interfaces/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J5wpR+wKt5xbkIaklarzdkfRxMwIU8+CUz2D5WvWeB3t4opI0VbbvLklXY8KT4TvSRzaQuNIZs65cV2Mu7H0pw==",
-      "path": "system.reactive.core/4.0.0",
-      "hashPath": "system.reactive.core.4.0.0.nupkg.sha512"
+      "sha512": "sha512-aNVY3QoRznGFeQ+w+bMqhD8ElNWoyYq+7XTQIoxKKjBOyTOjUqIMEf1wvSdtwC4y92zg2W9q38b4Sr6cYNHVLg==",
+      "path": "system.reactive.interfaces/3.1.1",
+      "hashPath": "system.reactive.interfaces.3.1.1.nupkg.sha512"
     },
-    "System.Reactive.Linq/4.0.0": {
+    "System.Reactive.Linq/3.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LaYTtUoOtQJ7SBb1/tfM/kcIHy0dsA7E+31/739HyTyGg9uSGzP/fV4VFI3/Atg7MQiks+JbEAwcoTDJY0pJoA==",
-      "path": "system.reactive.linq/4.0.0",
-      "hashPath": "system.reactive.linq.4.0.0.nupkg.sha512"
+      "sha512": "sha512-HwsZsoYRg51cLGBOEa0uoZ5+d4CMcHEg/KrbqePhLxoz/SLA+ULISphBtn3woABPATOQ6j5YgGZWh4jxnJ3KYQ==",
+      "path": "system.reactive.linq/3.1.1",
+      "hashPath": "system.reactive.linq.3.1.1.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",
@@ -691,12 +718,12 @@
       "path": "system.runtime.interopservices/4.3.0",
       "hashPath": "system.runtime.interopservices.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+    "System.Runtime.InteropServices.WindowsRuntime/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J4GUi3xZQLUBasNwZnjrffN8i5wpHrBtZoLG+OhRyGo/+YunMRWWtwoMDlUAIdmX0uRfpHIBDSV6zyr3yf00TA==",
-      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
-      "hashPath": "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512"
+      "sha512": "sha512-oIIXM4w2y3MiEZEXA+RTtfPV+SZ1ymbFdWppHlUciNdNIL0/Uo3HW9q9iN2O7T7KUmRdvjA7C2Gv4exAyW4zEQ==",
+      "path": "system.runtime.interopservices.windowsruntime/4.0.1",
+      "hashPath": "system.runtime.interopservices.windowsruntime.4.0.1.nupkg.sha512"
     },
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "type": "package",
@@ -754,6 +781,20 @@
       "path": "system.threading.tasks.extensions/4.3.0",
       "hashPath": "system.threading.tasks.extensions.4.3.0.nupkg.sha512"
     },
+    "System.Threading.Thread/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
+      "path": "system.threading.thread/4.0.0",
+      "hashPath": "system.threading.thread.4.0.0.nupkg.sha512"
+    },
+    "System.Threading.ThreadPool/4.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IMXgB5Vf/5Qw1kpoVgJMOvUO1l32aC+qC3OaIZjWJOjvcxuxNWOK2ZTWWYXfij22NHxT2j1yWX5vlAeQWld9vA==",
+      "path": "system.threading.threadpool/4.0.10",
+      "hashPath": "system.threading.threadpool.4.0.10.nupkg.sha512"
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -767,11 +808,6 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
-    },
-    "GraphQL/3.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

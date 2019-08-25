@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GraphQL\GraphQL.csproj" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
   </ItemGroup>
+
 
 </Project>
